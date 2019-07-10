@@ -327,6 +327,10 @@ footer {
     text-align: center;
 }
 
+.about_me .sentence {
+    text-align: center;
+}
+
 .about_me h1 {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 24px;
@@ -340,17 +344,18 @@ footer {
     text-transform: uppercase;
 }
 
-.about_me p {
+.about_me .sentence p {
     font-family: 'Saira', sans-serif;
     font-size: 12px;
     font-weight: 300;
     margin: 20px 0;
+    text-align: left;
 
 }
 
 .about_me img {
     width: 100%;
-    margin: 5px 0;
+    margin: 5px auto;
 
 }
 
@@ -576,17 +581,14 @@ footer {
 /* sekcja portfolio */
 
 .portfolio {
-    background-color: black;
-    padding: 10px 0 30px;
-
+    background-color: rgb(56, 54, 54);
+    padding: 30px 0 30px;
     width: 100%;
-
-
 }
 
 .portfolio h1 {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     text-transform: uppercase;
     color: white;
     text-align: center;
@@ -595,30 +597,6 @@ footer {
 }
 
 
-.portfolio .js img {
-    height: 70%;
-
-
-
-
-
-
-}
-
-.portfolio .html img {
-    width: 100%;
-
-
-}
-
-
-
-
-.portfolio .web img {
-    width: 100%;
-
-
-}
 
 
 .portfolio .about {
@@ -630,14 +608,16 @@ footer {
 }
 
 .portfolio .about h2 {
-    font-size: 18px;
+    font-size: 28px;
     border-bottom: 2px solid white;
+    letter-spacing: 2px;
     margin-bottom: 12px;
     padding-bottom: 12px;
     text-indent: 20px;
 }
 
 .portfolio .about p {
+    padding-top: 20px;
     font-size: 20px;
     padding-left: 20px;
 }
@@ -646,8 +626,16 @@ footer {
     text-align: center;
     font-size: 50px;
     padding-left: 20px;
+}
 
+.portfolio .about .progress>p {
 
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.portfolio img {
+    width: 100%;
 }
 
 .portfolio .html+.about .progress i.active {
@@ -710,23 +698,37 @@ footer {
 
 @media (min-width:768px) {
     .portfolio h1 {
-        font-size: 40px;
+        font-size: 80px;
     }
 
     .portfolio .about h2 {
-        font-size: 28px;
+        font-size: 48px;
 
 
         text-indent: 40px;
     }
 
     .portfolio .about p {
-        font-size: 18px;
+        padding-top: 40px;
+        font-size: 40px;
         padding-left: 48px;
+    }
+
+    .portfolio .about .progress {
+        text-align: center;
+        font-size: 100px;
+
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 30px;
+        padding-left: 0;
     }
 
     .portfolio .project {
         margin-bottom: 40px;
+        text-align: center;
     }
 }
 
@@ -759,10 +761,12 @@ footer {
         padding-right: 20px;
     }
 
+
     .portfolio .project:nth-of-type(even) .about h2 {
         text-indent: 0;
         margin-left: 40px;
     }
+
 }
 
 
@@ -1048,7 +1052,7 @@ footer {
 /* formularz */
 
 .contact {
-    background-color: black;
+    background-color: rgb(56, 54, 54);
     padding: 30px 20px;
 }
 
