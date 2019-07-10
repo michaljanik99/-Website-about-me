@@ -323,45 +323,47 @@ footer {
 .about_me {
     margin-top: 50px;
     overflow: hidden;
-    padding: 5%;
+    padding: 5% 0 5%;
     text-align: center;
 }
 
 .about_me .sentence {
     text-align: center;
+
+
 }
 
 .about_me h1 {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .about_me h2 {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     text-transform: uppercase;
 }
 
 .about_me .sentence p {
     font-family: 'Saira', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
-    margin: 20px 0;
+    margin: 20px 5%;
     text-align: left;
 
 }
 
 .about_me img {
     width: 100%;
-    margin: 5px auto;
+    margin: 30px auto 5px;
 
 }
 
 
 @media (min-width:360px) {
-    .about_me p {
+    .about_me .sentence p {
         font-size: 14px;
     }
 
@@ -378,8 +380,18 @@ footer {
     }
 }
 
+@media (min-width:480px) and (orientation:landscape) {
+    .about_me img {
+        width: 60%;
+        margin: 30px auto 5px;
+
+    }
+}
+
+@media (min-width:600px) {}
+
 @media (min-width:768px) {
-    .about_me p {
+    .about_me .sentence p {
         font-size: 20px;
     }
 
@@ -396,7 +408,10 @@ footer {
     }
 }
 
-@media (min-width:1024px) {
+@media(orientation:landscape) and (min-width: 800px) {}
+
+
+@media (orientation: landscape) and (min-width:1024px) {
     .sentence {
         float: left;
         width: 32%;
@@ -407,8 +422,8 @@ footer {
 
     }
 
-    .about_me p {
-        font-size: 18px;
+    .about_me .sentence p {
+        font-size: 28px;
     }
 
     .about_me h1 {
@@ -422,7 +437,9 @@ footer {
 
 }
 
-@media (min-width:1600px) {
+@media (orientation: landscape) and (min-width: 1280px) {}
+
+@media (orientation: landscape) and (min-width: 1440px) {
     .sentence {
 
         width: 32%;
@@ -586,6 +603,10 @@ footer {
     width: 100%;
 }
 
+.portfolio .web {
+    text-align: center;
+}
+
 .portfolio h1 {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 40px;
@@ -608,7 +629,7 @@ footer {
 }
 
 .portfolio .about h2 {
-    font-size: 28px;
+    font-size: 23px;
     border-bottom: 2px solid white;
     letter-spacing: 2px;
     margin-bottom: 12px;
@@ -618,24 +639,24 @@ footer {
 
 .portfolio .about p {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 20px;
 }
 
 .portfolio .about .progress {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     padding-left: 20px;
 }
 
 .portfolio .about .progress>p {
 
-    font-size: 20px;
+    font-size: 13px;
     padding-left: 0;
 }
 
 .portfolio img {
-    width: 100%;
+    width: 60%;
 }
 
 .portfolio .html+.about .progress i.active {
@@ -695,10 +716,97 @@ footer {
 
 }
 
+@media (min-width:480px) and (orientation:landscape) {
+    .portfolio h1 {
+        font-size: 35px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 30px;
+
+
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        padding-top: 5px;
+        font-size: 13px;
+        padding-left: 48px;
+    }
+
+    .portfolio .about .progress {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .portfolio .project .web {
+        text-align: center;
+    }
+
+    .portfolio .project .web img {
+        width: 50%;
+    }
+}
+
+@media (min-width:600px) {
+    .project {
+        padding-top: 30px;
+    }
+
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 30px;
+
+
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        padding-top: 5px;
+        font-size: 13px;
+        padding-left: 48px;
+    }
+
+    .portfolio .about .progress {
+        text-align: center;
+        font-size: 40px;
+
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .portfolio .project .web img {
+        width: 30%;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
 
 @media (min-width:768px) {
     .portfolio h1 {
-        font-size: 80px;
+        font-size: 70px;
+    }
+
+    .portfolio .about {
+        padding-top: 0;
     }
 
     .portfolio .about h2 {
@@ -710,13 +818,13 @@ footer {
 
     .portfolio .about p {
         padding-top: 40px;
-        font-size: 40px;
+        font-size: 30px;
         padding-left: 48px;
     }
 
     .portfolio .about .progress {
         text-align: center;
-        font-size: 100px;
+        font-size: 50px;
 
     }
 
@@ -730,9 +838,15 @@ footer {
         margin-bottom: 40px;
         text-align: center;
     }
+
+
+    .portfolio .project .web img {
+        width: 50%;
+    }
+
 }
 
-@media(orientation:landscape) {
+@media(orientation:landscape) and (min-width: 800px) {
 
     .web,
     .about {
@@ -741,9 +855,35 @@ footer {
 
     }
 
-    .web img {
-        display: block;
+    .portfolio h1 {
+        font-size: 45px;
     }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+
+
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        padding-top: 5px;
+        font-size: 13px;
+        padding-left: 48px;
+    }
+
+    .portfolio .about .progress {
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 12px;
+        padding-left: 0;
+    }
+
 
     .portfolio .project:nth-of-type(even) .web {
         float: right;
@@ -767,26 +907,129 @@ footer {
         margin-left: 40px;
     }
 
+    .portfolio .project .web {
+        text-align: center;
+    }
+
+    .portfolio .project .web img {
+        display: block;
+        width: 90%;
+
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    .project {
+        padding-top: 100px;
+    }
+
+    .portfolio h1 {
+        font-size: 55px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 33px;
+
+
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        padding-top: 40px;
+        font-size: 23px;
+        padding-left: 48px;
+    }
+
+    .portfolio .about .progress {
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .portfolio .project .web img {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    .project {
+        padding-top: 100px;
+    }
+
+    .portfolio h1 {
+        font-size: 80px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 48px;
+
+
+        text-indent: 20px;
+    }
+
+    .portfolio .about p {
+        padding-top: 40px;
+        font-size: 40px;
+        padding-left: 48px;
+    }
+
+    .portfolio .about .progress {
+        text-align: center;
+        font-size: 80px;
+
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 30px;
+        padding-left: 0;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+        text-align: center;
+    }
 }
 
 
-@media (orientation: landscape) and (min-width: 1400px) {
+
+@media (orientation: landscape) and (min-width: 1440px) {
     .portfolio h1 {
-        font-size: 60px;
+        font-size: 100px;
         padding: 30px 0;
     }
 
     .portfolio .about h2 {
         padding-top: 50px;
-        font-size: 28px;
+        font-size: 48px;
         text-indent: 40px;
         margin-bottom: 50px;
     }
 
     .portfolio .about p {
-        font-size: 18px;
+        font-size: 35px;
         padding-left: 40px;
         line-height: 180%;
+    }
+
+    .portfolio .about .progress>p {
+
+        font-size: 34px;
+        padding-left: 0;
     }
 
     .portfolio .progress {
@@ -797,6 +1040,11 @@ footer {
 
     .portfolio .project {
         margin-bottom: 40px;
+    }
+
+    .portfolio .project .web img {
+        width: 100%;
+        margin-top: 170px;
     }
 }
 
