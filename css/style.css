@@ -486,20 +486,23 @@ footer {
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
+
+    .about_me h1 {
+        font-size: 35px;
+    }
+
+
+
+
     .sentence {
 
         opacity: 0;
-        transition: 1s 1s;
 
-
-    }
-
-    .sentence.active {
-
-        opacity: 1;
 
 
     }
+
+
 }
 
 @media (orientation: landscape) and (min-width: 1440px) {
