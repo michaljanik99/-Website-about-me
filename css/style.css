@@ -62,37 +62,39 @@ header div.welcome {
     font-size: 40px;
     text-transform: uppercase;
 
+
 }
 
 
 
 header h1 {
 
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 15px;
 
 
 }
 
 header h2 {
-    font-size: 20px;
+    font-size: 30px;
 
     font-weight: normal;
 }
 
-header a {
+header button {
     text-decoration: none;
     display: block;
-    line-height: 32px;
+    line-height: 37px;
     padding: 0 20px;
+    margin: 20px auto;
     text-transform: uppercase;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     background-color: transparent;
     border: 2px solid white;
 }
 
-@media (orientation:portrait) and (min-width:360px) {
+@media (min-width:480px) and (orientation:landscape) {
     header h1 {
         font-size: 24px;
     }
@@ -109,7 +111,7 @@ header a {
     }
 }
 
-@media (orientation:portrait) and (min-width:410px) {
+@media (min-width:600px) {
     header h1 {
         font-size: 26px;
     }
@@ -131,7 +133,7 @@ header a {
 
 }
 
-@media (orientation:portrait) and (min-width:728px) {
+@media (min-width:768px) {
     header p {
         font-size: 80px;
     }
@@ -157,58 +159,76 @@ header a {
 
 }
 
-@media (orientation:landscape) {
+@media(orientation:landscape) and (min-width: 800px) {
     header img {
         height: 80%;
         bottom: 0;
         right: -5%;
     }
 
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
     header div.welcome {
         left: 7%;
         right: 50%;
-        top: 15%
+        top: 15%;
+        text-align: center;
+
     }
 
     header button {
-        margin-top: 40px;
-    }
+        margin-top: 10px;
 
-}
-
-@media (orientation:landscape) and (min-width:640px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    header h2 {
-        font-size: 24px;
-    }
-
-    header button {
         font-size: 16px;
-
+        line-height: 30px;
     }
+
 }
 
-@media (orientation:landscape) and (min-width:900px) {
+@media (orientation: landscape) and (min-width: 1024px) {
 
-    header p {
-        font-size: 56px;
-    }
 
     header h1 {
         font-size: 34px;
-        margin-top: 40px;
     }
 
     header h2 {
         font-size: 34px;
+    }
+
+    header button {
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 40px;
+
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header p {
+        font-size: 66px;
+    }
+
+    header h1 {
+        font-size: 44px;
+        margin-top: 40px;
+    }
+
+
+    header h2 {
+        font-size: 44px;
     }
 
     header button {
         margin-top: 80px;
-        font-size: 28px;
+        font-size: 30px;
         line-height: 70px;
 
     }
@@ -220,55 +240,11 @@ header a {
 
 }
 
-@media (min-width:1024px) {
-    header button {
-        cursor: pointer;
-        transition: .3s;
-    }
 
-    header button:hover {
-        background-color: #fff;
-        color: #111;
-    }
-}
 
-@media (orientation:landscape) and (min-width:1280px) {
+@media (orientation: landscape) and (min-width: 1440px) {
     header div.welcome {
-        text-align: left;
-    }
-
-    header p {
-        font-size: 100px;
-
-    }
-
-    header h1 {
-        font-size: 60px;
-        margin-top: 30px;
-    }
-
-    header h2 {
-        font-size: 50px;
-    }
-
-    header button {
-        margin-top: 50px;
-        font-size: 30px;
-        line-height: 50px;
-        padding: 0 40px;
-
-
-    }
-
-    header img {
-        right: -7%;
-        height: 85%;
-    }
-}
-
-@media (orientation:landscape) and (min-width:1600px) {
-    header div.welcome {
-        text-align: left;
+        text-align: center;
     }
 
     header p {
@@ -276,18 +252,18 @@ header a {
     }
 
     header h1 {
-        font-size: 60px;
+        font-size: 70px;
         margin-top: 30px;
     }
 
     header h2 {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     header button {
         margin-top: 50px;
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 35px;
+        line-height: 60px;
         padding: 0 40px;
 
 
@@ -329,6 +305,7 @@ footer {
 
 .about_me .sentence {
     text-align: center;
+    margin: 0 auto;
 
 
 }
@@ -388,7 +365,23 @@ footer {
     }
 }
 
-@media (min-width:600px) {}
+@media (min-width:600px) {
+    .about_me .sentence p {
+        font-size: 17px;
+    }
+
+    .about_me h1 {
+        font-size: 26px;
+    }
+
+    .about_me h2 {
+        font-size: 20px;
+    }
+
+    .about_me img {
+        width: 55%;
+    }
+}
 
 @media (min-width:768px) {
     .about_me .sentence p {
@@ -408,7 +401,25 @@ footer {
     }
 }
 
-@media(orientation:landscape) and (min-width: 800px) {}
+@media(orientation:landscape) and (min-width: 800px) {
+    .about_me h1 {
+        font-size: 45px;
+    }
+
+    .sentence {
+        float: left;
+        width: 50%;
+        padding: 2%;
+        text-align: justify;
+        text-align: center;
+
+
+    }
+
+    .sentence:last-of-type {
+        margin-left: 25vw;
+    }
+}
 
 
 @media (orientation: landscape) and (min-width:1024px) {
@@ -422,8 +433,12 @@ footer {
 
     }
 
+    .sentence:last-of-type {
+        margin-left: 0;
+    }
+
     .about_me .sentence p {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .about_me h1 {
@@ -432,6 +447,11 @@ footer {
 
     .about_me h2 {
         font-size: 28px;
+    }
+
+    .about_me img {
+        width: 100%;
+        margin-bottom: 40px
     }
 
 
@@ -470,41 +490,46 @@ footer {
 
 /* sekcja o w przyszłosći */
 .futures {
-    margin-top: 50px;
+    margin: 50px auto 50px;
     overflow: hidden;
     padding: 5%;
     text-align: center;
 }
 
+.future {
+    margin-top: 70px;
+}
+
 .futures h1 {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .futures h2 {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     text-transform: uppercase;
 }
 
 .futures p {
     font-family: 'Saira', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
+    text-align: left;
     font-weight: 300;
     margin: 20px 0;
 
 }
 
 .futures img {
-    width: 100%;
+    width: 60%;
     margin: 5px 0;
 
 }
 
 
-@media (min-width:360px) {
+@media (min-width:480px) and (orientation:landscape) {
     .futures p {
         font-size: 14px;
     }
@@ -518,9 +543,11 @@ footer {
     }
 
     .futures img {
-        width: 85%;
+        width: 30%;
     }
 }
+
+@media (min-width:600px) {}
 
 @media (min-width:768px) {
     .futures p {
@@ -540,7 +567,35 @@ footer {
     }
 }
 
-@media (min-width:1024px) {
+@media(orientation:landscape) and (min-width: 800px) {
+    .future {
+        float: left;
+        width: 50%;
+        padding: 2%;
+
+        text-align: center;
+
+
+    }
+
+    .futures p {
+        font-size: 20px;
+    }
+
+    .futures h1 {
+        font-size: 28px;
+    }
+
+    .futures h2 {
+        font-size: 24px;
+    }
+
+    .futures img {
+        width: 70%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
     .future {
         float: left;
         width: 32%;
@@ -549,6 +604,10 @@ footer {
         text-align: center;
 
 
+    }
+
+    .futures img {
+        margin: 5px auto;
     }
 
     .futures p {
@@ -564,20 +623,23 @@ footer {
     }
 
 
+
 }
 
-@media (min-width:1600px) {
+@media (orientation: landscape) and (min-width: 1280px) {}
+
+@media (orientation: landscape) and (min-width: 1440px) {
     .future {
 
         width: 32%;
         padding: 2%;
-        text-align: justify;
+        text-align: center;
 
 
     }
 
     .futures p {
-        font-size: 21px;
+        font-size: 25px;
     }
 
     .futures {
@@ -751,7 +813,7 @@ footer {
     }
 
     .portfolio .project .web img {
-        width: 50%;
+        width: 30%;
     }
 }
 
