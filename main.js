@@ -1,6 +1,17 @@
 const btnHref = document.querySelector('header button');
 btnHref.addEventListener('click', () => location.href = "https://github.com/michaljanik99?tab=repositories");
 
+const spnaText = document.querySelector('.welcome h2');
+const txt = "POCZĄTKUJĄCY WEB DEVELOPER";
+let indexText = 0;
+const addLetter = () => {
+    spnaText.textContent += txt[indexText];
+    indexText++;
+    if (indexText === txt.length) clearInterval(indexTyping);
+}
+const indexTyping = setInterval(addLetter, 150);
+
+
 
 $(window).on("scroll", function () {
     let windowHeigth = $(window).height();
