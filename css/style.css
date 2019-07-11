@@ -203,7 +203,46 @@ header button {
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
+    header button {
+        display: inline-block;
+        margin-top: 80px;
+        font-size: 30px;
+        line-height: 70px;
+        position: relative;
 
+        overflow: hidden;
+
+    }
+
+    header button::after {
+        content: 'Moje Repozytorium Github';
+        position: absolute;
+        color: #4A00E0;
+        font-size: 30px;
+        font-family: 'Saira Condensed', sans-serif;
+
+        font-weight: bold;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        width: 600px;
+        background-color: white;
+        transition: .3s linear;
+
+
+    }
+
+    header button:hover::after {
+        left: 0%;
+
+
+    }
+
+    header img {
+        right: -22%;
+        height: 92%;
+    }
 
     header h1 {
         font-size: 34px;
@@ -237,20 +276,8 @@ header button {
         font-size: 44px;
     }
 
-    header button {
-        margin-top: 80px;
-        font-size: 30px;
-        line-height: 70px;
-        transition: .5s linear;
-
-    }
-
-    header button:hover {
-        background-color: white;
-        color: #4A00E0;
 
 
-    }
 
     header img {
         right: -22%;
@@ -1492,13 +1519,14 @@ footer {
 
 
 .contact .socials {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .contact .social {
     padding: 10px 0;
     color: white;
     font-family: 'Saira Condensed', sans-serif;
+
 
 }
 
@@ -1509,8 +1537,8 @@ footer {
 
 .contact .social span {
     line-height: 72px;
-    padding-left: 20px;
-    float: left;
+    padding-left: 10px;
+
     font-size: 20px;
 }
 
