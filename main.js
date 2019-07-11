@@ -56,7 +56,7 @@ $(window).on("scroll", function () {
 
 
 
-    if (scrollValue >= aboutMeFromTop + ((aboutMeHeight / 2) - windowHeigth) && windowWidth >= 1600) {
+    if (scrollValue >= aboutMeFromTop + ((aboutMeHeight / 2) - windowHeigth) && windowWidth >= 1280) {
         $('.about_me .sentence').each(function (index, element) {
 
             $(element).css({
