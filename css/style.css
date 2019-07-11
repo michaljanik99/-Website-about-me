@@ -15,14 +15,6 @@ font-family: 'Saira', sans-serif; */
     content: "";
 }
 
-.cursor {
-    opacity: 0;
-    transition: .2s;
-}
-
-.cursor.active {
-    opacity: 1;
-}
 
 
 
@@ -124,11 +116,15 @@ header button {
 
 @media (min-width:600px) {
     header h1 {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     header h2 {
         font-size: 26px;
+    }
+
+    header p {
+        font-size: 40px;
     }
 
     header button {
@@ -430,20 +426,25 @@ footer {
 }
 
 @media (min-width:600px) {
+
+    .about_me {
+        margin-top: 20px;
+    }
+
     .about_me .sentence p {
         font-size: 17px;
     }
 
     .about_me h1 {
-        font-size: 26px;
+        font-size: 40px;
     }
 
     .about_me h2 {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .about_me img {
-        width: 55%;
+        width: 45%;
     }
 }
 
@@ -636,7 +637,23 @@ footer {
     }
 }
 
-@media (min-width:600px) {}
+@media (min-width:600px) {
+    .futures p {
+        font-size: 17px;
+    }
+
+    .futures h1 {
+        font-size: 40px;
+    }
+
+    .futures h2 {
+        font-size: 24px;
+    }
+
+    .futures img {
+        width: 30%;
+    }
+}
 
 @media (min-width:768px) {
     .futures p {
@@ -909,13 +926,18 @@ footer {
 }
 
 @media (min-width:600px) {
-    .project {
-        padding-top: 30px;
+    .portfolio {
+        padding: 30px 0 100px;
     }
 
     .portfolio h1 {
         font-size: 40px;
     }
+
+    .portfolio .about {
+        padding: 10px 20px 20px 0;
+    }
+
 
     .portfolio .about h2 {
         font-size: 30px;
