@@ -494,15 +494,21 @@ footer {
 
 
 
+
     .sentence {
 
         opacity: 0;
-
+        transition: 1s 1s;
 
 
     }
 
+    .sentence.active {
 
+        opacity: 1;
+
+
+    }
 }
 
 @media (orientation: landscape) and (min-width: 1440px) {
@@ -511,9 +517,7 @@ footer {
         width: 32%;
         padding: 2%;
         text-align: justify;
-
-
-
+        margin: 0 10px;
     }
 
 
@@ -821,6 +825,7 @@ footer {
 
 
 .portfolio .project {
+    transition: 0.5s linear;
     position: relative;
     max-width: 1400px;
     margin: 0 auto 0;
@@ -1082,11 +1087,11 @@ footer {
     }
 
     .portfolio h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .portfolio .about h2 {
-        font-size: 48px;
+        font-size: 38px;
 
 
         text-indent: 20px;
@@ -1094,31 +1099,47 @@ footer {
 
     .portfolio .about p {
         padding-top: 40px;
-        font-size: 40px;
+        font-size: 25px;
         padding-left: 48px;
     }
 
     .portfolio .about .progress {
         text-align: center;
-        font-size: 80px;
+        font-size: 40px;
 
     }
 
     .portfolio .about .progress>p {
 
-        font-size: 30px;
+        font-size: 22px;
         padding-left: 0;
     }
 
     .portfolio .project {
         margin-bottom: 40px;
         text-align: center;
+        transition: 1s linear;
+    }
+
+    .portfolio .project .web img {
+        width: 80%;
+        margin: 40px auto 0;
     }
 }
 
 
 
 @media (orientation: landscape) and (min-width: 1440px) {
+    .project:nth-of-type(even) {
+        position: relative;
+        left: -100%;
+    }
+
+    .project:nth-of-type(odd) {
+        position: relative;
+        left: 100%;
+    }
+
     .portfolio h1 {
         font-size: 100px;
         padding: 30px 0;
