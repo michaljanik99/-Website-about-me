@@ -15,13 +15,11 @@ font-family: 'Saira', sans-serif; */
     content: "";
 }
 
-
 .baner {
     background: #8E2DE2;
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
     background: linear-gradient(to right, #4A00E0, #8E2DE2);
 }
-
 
 header {
     position: relative;
@@ -32,8 +30,6 @@ header {
     overflow: hidden;
     max-width: 1920px;
     margin: 0 auto;
-
-
 }
 
 header>* {
@@ -45,40 +41,28 @@ header img {
     height: 50%;
     bottom: 0;
     right: 0;
-
 }
-
-
 
 header div.welcome {
     z-index: 1;
     top: 8%;
     left: 5%;
     right: 5%;
-
     font-family: 'Saira Condensed', sans-serif;
     color: white;
     font-weight: bold;
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-
-
 }
 
-
-
 header h1 {
-
     font-size: 30px;
     margin-top: 15px;
-
-
 }
 
 header h2 {
     font-size: 30px;
-
     font-weight: normal;
 }
 
@@ -108,7 +92,6 @@ header button {
         margin-top: 24px;
         font-size: 16px;
         line-height: 40px;
-
     }
 }
 
@@ -129,7 +112,6 @@ header button {
         margin-top: 40px;
         font-size: 20px;
         line-height: 50px;
-
     }
 
     header img {
@@ -155,7 +137,6 @@ header button {
         margin-top: 60px;
         font-size: 30px;
         line-height: 60px;
-
     }
 
     header img {
@@ -184,12 +165,10 @@ header button {
         right: 50%;
         top: 15%;
         text-align: center;
-
     }
 
     header button {
         margin-top: 10px;
-
         font-size: 16px;
         line-height: 30px;
     }
@@ -197,7 +176,6 @@ header button {
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
-
 
     header img {
         right: -22%;
@@ -216,7 +194,6 @@ header button {
         margin-top: 30px;
         font-size: 24px;
         line-height: 40px;
-
     }
 }
 
@@ -227,15 +204,9 @@ header button {
         font-size: 30px;
         line-height: 70px;
         position: relative;
-
         overflow: hidden;
-
     }
-
-
-
 }
-
 
 @media (orientation: landscape) and (min-width: 1280px) {
     header p {
@@ -255,21 +226,13 @@ header button {
     header button:hover {
         color: #4A00E0;
         background-color: white;
-
     }
-
-
-
 
     header img {
         right: -22%;
         height: 92%;
     }
-
-
 }
-
-
 
 @media (orientation: landscape) and (min-width: 1440px) {
     header div.welcome {
@@ -294,8 +257,6 @@ header button {
         font-size: 35px;
         line-height: 60px;
         padding: 0 40px;
-
-
     }
 
     header img {
@@ -306,7 +267,6 @@ header button {
     }
 
     @keyframes anim {
-        0% {}
 
         50% {
             opacity: 0.5;
@@ -316,14 +276,9 @@ header button {
         100% {
             opacity: 1;
             right: -10%;
-
         }
     }
 }
-
-
-
-
 
 footer {
     background: #8E2DE2;
@@ -335,13 +290,9 @@ footer {
     font-family: 'Saira', sans-serif;
     text-align: center;
     padding: 20px;
-
-
-
-
 }
 
-/* sekcja o mnie */
+/* section about me */
 .about_me {
     max-width: 1920px;
     margin-top: 50px;
@@ -353,8 +304,6 @@ footer {
 .about_me .sentence {
     text-align: center;
     margin: 0 auto;
-
-
 }
 
 .about_me h1 {
@@ -376,21 +325,17 @@ footer {
     font-weight: 300;
     margin: 20px 5%;
     text-align: left;
-
 }
 
 .about_me img {
     width: 100%;
     margin: 30px auto 5px;
-
 }
-
 
 @media (min-width:360px) {
     .about_me .sentence p {
         font-size: 14px;
     }
-
 
     .about_me h1 {
         font-size: 28px;
@@ -409,9 +354,7 @@ footer {
     .about_me img {
         width: 60%;
         margin: 30px auto 5px;
-
     }
-
 }
 
 @media (min-width:600px) {
@@ -466,8 +409,6 @@ footer {
         padding: 2%;
         text-align: justify;
         text-align: center;
-
-
     }
 
     .sentence:last-of-type {
@@ -483,8 +424,6 @@ footer {
         padding: 2%;
         text-align: justify;
         text-align: center;
-
-
     }
 
     .sentence:last-of-type {
@@ -507,8 +446,6 @@ footer {
         width: 100%;
         margin-bottom: 40px
     }
-
-
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
@@ -517,36 +454,23 @@ footer {
         font-size: 35px;
     }
 
-
-
-
-
     .sentence {
-
         opacity: 0;
         transition: 1s 1s;
-
-
     }
 
     .sentence.active {
-
         opacity: 1;
-
-
     }
 }
 
 @media (orientation: landscape) and (min-width: 1440px) {
     .sentence {
-
         width: 32%;
         padding: 2%;
         text-align: justify;
         margin: 0 10px;
     }
-
-
 
     .about_me p {
         font-size: 21px;
@@ -563,11 +487,9 @@ footer {
     .about_me h2 {
         font-size: 36px;
     }
-
-
 }
 
-/* sekcja o w przyszłosći */
+/* section future */
 .futures {
     margin: 50px auto 50px;
     overflow: hidden;
@@ -598,15 +520,12 @@ footer {
     text-align: left;
     font-weight: 300;
     margin: 20px 0;
-
 }
 
 .futures img {
     width: 60%;
     margin: 5px 0;
-
 }
-
 
 @media (min-width:480px) and (orientation:landscape) {
     .futures p {
@@ -667,10 +586,7 @@ footer {
         float: left;
         width: 50%;
         padding: 2%;
-
         text-align: center;
-
-
     }
 
     .futures p {
@@ -697,8 +613,6 @@ footer {
         padding: 2%;
         text-align: justify;
         text-align: center;
-
-
     }
 
     .futures img {
@@ -717,29 +631,18 @@ footer {
         font-size: 28px;
     }
 
-
-
     @keyframes up {
         50% {
-
             transform: scale(1.5);
         }
     }
-
-
-
 }
-
-@media (orientation: landscape) and (min-width: 1280px) {}
 
 @media (orientation: landscape) and (min-width: 1440px) {
     .future {
-
         width: 32%;
         padding: 2%;
         text-align: center;
-
-
     }
 
     .futures p {
@@ -757,11 +660,9 @@ footer {
     .futures h2 {
         font-size: 36px;
     }
-
-
 }
 
-/* sekcja portfolio */
+/* section portfolio */
 
 .portfolio {
     background-color: rgb(56, 54, 54);
@@ -783,9 +684,6 @@ footer {
     margin-bottom: 15px;
     padding: 10px 20px;
 }
-
-
-
 
 .portfolio .about {
     color: white;
@@ -817,7 +715,6 @@ footer {
 }
 
 .portfolio .about .progress>p {
-
     font-size: 13px;
     padding-left: 0;
 }
@@ -827,61 +724,42 @@ footer {
 }
 
 .portfolio .html+.about .progress i.active {
-
     color: #f0652a;
-
 }
 
 .portfolio .js+.about .progress i.active {
-
     color: #f0db4f;
-
 }
 
 .portfolio .css+.about .progress i.active {
-
     color: #33a9dc;
-
 }
 
 .portfolio .php+.about .progress i.active {
-
     color: #36447f;
-
 }
 
 .portfolio .git+.about .progress i.active {
-
     color: #9cdaf0;
-
 }
 
 .portfolio .sass+.about .progress i.active {
-
     color: #cc6699;
-
-
 }
 
 .portfolio .jquery+.about .progress i.active {
-
     color: #0769ad;
-
 }
 
 .portfolio .python+.about .progress i.active {
-
     color: #ffca1d;
-
 }
-
 
 .portfolio .project {
     transition: 0.3s ease-in;
     position: relative;
     max-width: 1400px;
     margin: 0 auto 0;
-
 }
 
 @media (min-width:480px) and (orientation:landscape) {
@@ -895,8 +773,6 @@ footer {
 
     .portfolio .about h2 {
         font-size: 30px;
-
-
         text-indent: 40px;
     }
 
@@ -909,11 +785,9 @@ footer {
     .portfolio .about .progress {
         text-align: center;
         font-size: 40px;
-
     }
 
     .portfolio .about .progress>p {
-
         font-size: 12px;
         padding-left: 0;
     }
@@ -940,11 +814,8 @@ footer {
         padding: 10px 20px 20px 0;
     }
 
-
     .portfolio .about h2 {
         font-size: 30px;
-
-
         text-indent: 40px;
     }
 
@@ -957,11 +828,9 @@ footer {
     .portfolio .about .progress {
         text-align: center;
         font-size: 40px;
-
     }
 
     .portfolio .about .progress>p {
-
         font-size: 12px;
         padding-left: 0;
     }
@@ -988,8 +857,6 @@ footer {
 
     .portfolio .about h2 {
         font-size: 48px;
-
-
         text-indent: 40px;
     }
 
@@ -1002,11 +869,9 @@ footer {
     .portfolio .about .progress {
         text-align: center;
         font-size: 50px;
-
     }
 
     .portfolio .about .progress>p {
-
         font-size: 30px;
         padding-left: 0;
     }
@@ -1016,11 +881,9 @@ footer {
         text-align: center;
     }
 
-
     .portfolio .project .web img {
         width: 50%;
     }
-
 }
 
 @media(orientation:landscape) and (min-width: 800px) {
@@ -1029,7 +892,6 @@ footer {
     .about {
         width: 50%;
         float: left;
-
     }
 
     .portfolio h1 {
@@ -1038,8 +900,6 @@ footer {
 
     .portfolio .about h2 {
         font-size: 28px;
-
-
         text-indent: 40px;
     }
 
@@ -1052,15 +912,12 @@ footer {
     .portfolio .about .progress {
         text-align: center;
         font-size: 30px;
-
     }
 
     .portfolio .about .progress>p {
-
         font-size: 12px;
         padding-left: 0;
     }
-
 
     .portfolio .project:nth-of-type(even) .web {
         float: right;
@@ -1078,7 +935,6 @@ footer {
         padding-right: 20px;
     }
 
-
     .portfolio .project:nth-of-type(even) .about h2 {
         text-indent: 0;
         margin-left: 40px;
@@ -1091,9 +947,7 @@ footer {
     .portfolio .project .web img {
         display: block;
         width: 90%;
-
     }
-
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
@@ -1108,8 +962,6 @@ footer {
 
     .portfolio .about h2 {
         font-size: 33px;
-
-
         text-indent: 40px;
     }
 
@@ -1126,7 +978,6 @@ footer {
     }
 
     .portfolio .about .progress>p {
-
         font-size: 20px;
         padding-left: 0;
     }
@@ -1153,8 +1004,6 @@ footer {
 
     .portfolio .about h2 {
         font-size: 38px;
-
-
         text-indent: 20px;
     }
 
@@ -1167,11 +1016,9 @@ footer {
     .portfolio .about .progress {
         text-align: center;
         font-size: 40px;
-
     }
 
     .portfolio .about .progress>p {
-
         font-size: 22px;
         padding-left: 0;
     }
@@ -1220,7 +1067,6 @@ footer {
     }
 
     .portfolio .about .progress>p {
-
         font-size: 34px;
         padding-left: 0;
     }
@@ -1241,7 +1087,7 @@ footer {
     }
 }
 
-/* moje motto */
+/* section motto */
 .slogan {
     text-align: center;
     background-image: url(../img/motto.jpg);
@@ -1249,7 +1095,6 @@ footer {
     background-position: top center;
     color: white;
     background-attachment: fixed;
-
 }
 
 .slogan h1 {
@@ -1257,19 +1102,16 @@ footer {
     font-size: 26px;
     text-transform: uppercase;
     margin-bottom: 15px;
-
 }
 
 .slogan .bg {
     background-color: rgba(0, 63, 114, 0.5);
     padding: 30px 10px;
-
 }
 
 .slogan p {
     font-family: 'Saira', sans-serif;
     font-size: 18px;
-
 }
 
 .slogan .author {
@@ -1277,16 +1119,11 @@ footer {
     font-size: 12px;
 }
 
-
-
-
-
 @media(orientation:landscape) {
     .slogan p {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-
     }
 }
 
@@ -1297,26 +1134,18 @@ footer {
         background-size: cover;
         background-position: top center;
         color: white;
-
     }
 
     .slogan h1 {
-
         font-size: 38px;
-
         margin-bottom: 35px;
-
     }
 
-
-
     .slogan p {
-
         font-size: 26px;
         width: 60%;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     .slogan .author {
@@ -1325,12 +1154,8 @@ footer {
     }
 
     .slogan .bg {
-
         padding: 50px 10px;
-
     }
-
-
 }
 
 @media (min-width:1024px) {
@@ -1340,23 +1165,18 @@ footer {
         background-size: cover;
         background-position: top center;
         color: white;
-
     }
 
     .slogan h1 {
-
         font-size: 60px;
-
         margin-bottom: 55px;
     }
 
     .slogan p {
-
         font-size: 40px;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     .slogan .author {
@@ -1365,14 +1185,11 @@ footer {
     }
 
     .slogan .bg {
-
         padding: 80px 10px;
-
     }
-
 }
 
-/* sekcja hobby */
+/* section hobby */
 
 .hobby {
     max-width: 1920px;
@@ -1383,7 +1200,6 @@ footer {
     font-family: 'Saira', sans-serif;
     color: white;
     text-align: center;
-    /* line-height: 25vh; */
     text-shadow: 0 0 4px black;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
@@ -1400,7 +1216,6 @@ footer {
     font-size: 36px;
     text-align: center;
     font-family: 'Saira Condensed', sans-serif;
-
 }
 
 .hobby .item {
@@ -1410,34 +1225,26 @@ footer {
 
 .hobby .item:nth-of-type(1) {
     background-image: url(../img/hobby1.jpg);
-
 }
 
 .hobby .item:nth-of-type(2) {
     background-image: url(../img/hobby2.jpg);
-
 }
 
 .hobby .item:nth-of-type(3) {
     background-image: url(../img/hobby3.jpg);
-
 }
 
 .hobby .item:nth-of-type(4) {
     background-image: url(../img/hobby4.jpg);
-
 }
 
 @media (min-width:533px) {
-
-
     .hobby .item {
         float: left;
         width: 50%;
         height: 40vh;
     }
-
-
 }
 
 @media (min-width:768px) {
@@ -1445,7 +1252,6 @@ footer {
         font-size: 48px;
         margin-bottom: 35px;
         margin-top: 40px;
-
     }
 
     .hobby .item p {
@@ -1490,7 +1296,7 @@ footer {
     }
 }
 
-/* formularz */
+/* section form */
 
 .contact {
     background-color: rgb(56, 54, 54);
@@ -1504,9 +1310,7 @@ footer {
     margin-bottom: 15px;
     color: white;
     text-align: center;
-
 }
-
 
 .contact input,
 .contact button,
@@ -1519,9 +1323,7 @@ footer {
 }
 
 .contact input {
-
     height: 36px;
-
 }
 
 .contact .wrap {
@@ -1541,7 +1343,6 @@ footer {
     border: 2px solid white;
 }
 
-
 .contact .socials {
     padding-top: 10px;
 }
@@ -1550,19 +1351,15 @@ footer {
     padding: 10px 0;
     color: white;
     font-family: 'Saira Condensed', sans-serif;
-
-
 }
 
 .contact .social img {
     float: left;
 }
 
-
 .contact .social span {
     line-height: 72px;
     padding-left: 10px;
-
     font-size: 20px;
 }
 
@@ -1571,11 +1368,9 @@ footer {
         display: inline-block;
         width: 49%;
     }
-
 }
 
 @media (min-width:1024px) {
-
     .contact h1 {
         font-size: 60px;
         padding: 30px 0;
@@ -1591,9 +1386,7 @@ footer {
     .contact input,
     .contact button,
     .contact textarea {
-
         margin-bottom: 35px;
-
     }
 
     .contact .social {
@@ -1630,10 +1423,6 @@ footer {
         border-color: #4A00E0;
         background-color: #4A00E0;
     }
-
-
-
-
 }
 
 @media (min-width:1280px) {
@@ -1644,16 +1433,14 @@ footer {
     .contact .social img {
         width: 30%;
     }
-
 }
 
 @media (min-width:1440px) {
     .contact .social span {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .contact .social img {
         width: 30%;
     }
-
 }

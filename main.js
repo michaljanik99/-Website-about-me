@@ -14,7 +14,6 @@ $(document).ready(function () {
     const indexTyping = setInterval(addLetter, 150);
 });
 
-
 // function of showing elements
 $(window).on("scroll", function () {
 
@@ -67,9 +66,8 @@ $(window).on("scroll", function () {
     const secondFutureSectionFromTop = $secondFutureSection.offset().top;
     const secondFutureSectionHeight = $secondFutureSection.outerHeight()
 
-
-
     // event calling
+    // event section about me
     if (scrollValue >= aboutMeFromTop + ((aboutMeHeight / 2) - windowHeigth) && windowWidth >= 1280) {
         $('.about_me .sentence').each(function (index, element) {
 
@@ -78,8 +76,6 @@ $(window).on("scroll", function () {
                 transition: `.5s ${(index+1)/2}s linear`
             })
         })
-
-
     }
     if (scrollValue >= htmlFromTop + ((htmlHeight / 2) - windowHeigth) && windowWidth >= 1280) {
         $html.css({
@@ -121,6 +117,7 @@ $(window).on("scroll", function () {
             left: 0
         })
     }
+    // event first section future
     if (scrollValue >= firstFutureSectionFromTop + ((firstFutureSectionHeight / 0.5) - windowHeigth) && windowWidth >= 1280) {
         $('.futures img:lt(3)').each(function (index, element) {
 
@@ -130,6 +127,7 @@ $(window).on("scroll", function () {
             })
         })
     }
+    // event second section future
     if (scrollValue >= secondFutureSectionFromTop + ((secondFutureSectionHeight / 0.5) - windowHeigth) && windowWidth >= 1280) {
 
         $(".futures img").slice(3).each(function (index, element) {
@@ -140,15 +138,5 @@ $(window).on("scroll", function () {
             })
         })
     }
-
-
-
-
-
-
-
-
-
-
-
 });
+

@@ -304,11 +304,12 @@
     <section class="contact clearfix">
         <h1>skontakuj się ze mną</h1>
         <div class="wrap clearfix">
-            <form>
-                <input type="text" placeholder="Twoje imię">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Twoja wiadomość"></textarea>
-                <button>wyślij wiadmość</button>
+            <form action="mail.php" method="post">
+                <input type="text" placeholder="Twoje imię" name="name">
+                <input type="text" placeholder="Email" name='email'>
+                <textarea placeholder="Twoja wiadomość" name="message"></textarea>
+                <button name='submit'>wyślij wiadmość</button>
+                
             </form>
         </div>
         <div class="socials clearfix">
@@ -319,7 +320,7 @@
                 <img src="img/contact2.png" alt=""><span>790407004</span>
             </div>
             <div class="social clearfix">
-                <img src="img/contact5.png" alt=""><span>mail@domena.pl</span>
+                <img src="img/contact5.png" alt=""><span>cooming soon</span>
             </div>
         </div>
     </section>
