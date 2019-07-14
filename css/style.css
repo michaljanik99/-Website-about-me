@@ -15,6 +15,88 @@ font-family: 'Saira', sans-serif; */
     content: "";
 }
 
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100vw;
+    z-index: 1;
+    background-color: #4A00E0;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    transition: 0.6s linear;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu div {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu.active {
+    transform: translateY(0%);
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #4A00E0;
+    z-index: 1;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+@media(min-width: 1280px) {
+    .menu {
+        flex-direction: row;
+        padding-left: 100px;
+    }
+
+    .menu div {
+        line-height: 100px;
+        font-size: 40px;
+        transition: .3s linear;
+
+    }
+
+
+    .nav {
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+        line-height: 100px;
+        transition: .3s linear;
+    }
+
+    .menu div:hover,
+    .nav:hover {
+        background-color: #8E2DE2;
+
+    }
+
+}
+
+
+
+
 .baner {
     background: #8E2DE2;
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
@@ -44,7 +126,7 @@ header img {
 }
 
 header div.welcome {
-    z-index: 1;
+
     top: 8%;
     left: 5%;
     right: 5%;

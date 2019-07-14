@@ -138,5 +138,26 @@ $(window).on("scroll", function () {
             })
         })
     }
+
+
 });
 
+$('.nav').click(() => {
+    $('.menu').toggleClass('active')
+    if ($('.nav i').hasClass('fa-bars')) {
+        $('.nav i').removeClass('fa-bars').addClass('fa-arrow-circle-up')
+    } else if ($('.nav i').hasClass('fa-arrow-circle-up')) {
+        $('.nav i').removeClass('fa-arrow-circle-up').addClass('fa-bars')
+    }
+})
+
+// fas fa-bars
+
+
+$(".menu div").click(function () {
+    const data = $(this).attr('data-target');
+
+    $('html, body').animate({
+        scrollTop: $(data).offset().top
+    }, 2000);
+});
