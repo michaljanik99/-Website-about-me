@@ -68,7 +68,7 @@ $(window).on("scroll", function () {
 
     // event calling
     // event section about me
-    if (scrollValue >= aboutMeFromTop + ((aboutMeHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= aboutMeFromTop + ((aboutMeHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $('.about_me .sentence').each(function (index, element) {
 
             $(element).css({
@@ -77,48 +77,48 @@ $(window).on("scroll", function () {
             })
         })
     }
-    if (scrollValue >= htmlFromTop + ((htmlHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= htmlFromTop + ((htmlHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $html.css({
             left: 0
         })
     }
-    if (scrollValue >= cssFromTop + ((cssHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= cssFromTop + ((cssHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $css.css({
             left: 0
         })
     }
-    if (scrollValue >= jsFromTop + ((jsHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= jsFromTop + ((jsHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $js.css({
             left: 0
         })
     }
-    if (scrollValue >= phpFromTop + ((phpHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= phpFromTop + ((phpHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $php.css({
             left: 0
         })
     }
-    if (scrollValue >= gitFromTop + ((gitHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= gitFromTop + ((gitHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $git.css({
             left: 0
         })
     }
-    if (scrollValue >= sassFromTop + ((sassHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= sassFromTop + ((sassHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $sass.css({
             left: 0
         })
     }
-    if (scrollValue >= jqueryFromTop + ((jqueryHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= jqueryFromTop + ((jqueryHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $jquery.css({
             left: 0
         })
     }
-    if (scrollValue >= pythonFromTop + ((pythonHeight / 2) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= pythonFromTop + ((pythonHeight / 2) - windowHeigth) && windowWidth >= 1100) {
         $python.css({
             left: 0
         })
     }
     // event first section future
-    if (scrollValue >= firstFutureSectionFromTop + ((firstFutureSectionHeight / 0.5) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= firstFutureSectionFromTop + ((firstFutureSectionHeight / 0.5) - windowHeigth) && windowWidth >= 1100) {
         $('.futures img:lt(3)').each(function (index, element) {
 
             $(element).css({
@@ -128,7 +128,7 @@ $(window).on("scroll", function () {
         })
     }
     // event second section future
-    if (scrollValue >= secondFutureSectionFromTop + ((secondFutureSectionHeight / 0.5) - windowHeigth) && windowWidth >= 1280) {
+    if (scrollValue >= secondFutureSectionFromTop + ((secondFutureSectionHeight / 0.5) - windowHeigth) && windowWidth >= 1100) {
 
         $(".futures img").slice(3).each(function (index, element) {
 
